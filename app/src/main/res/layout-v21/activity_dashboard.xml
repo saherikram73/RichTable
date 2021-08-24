@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:id="@+id/drawer"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    >
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/navigation"
+            app:headerLayout="@layout/header"
+            app:menu="@menu/sidemenu"
+            android:layout_gravity= "start"
+            ></com.google.android.material.navigation.NavigationView>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#34ebae"
+
+            app:title="Rich Table"
+            android:layout_marginBottom="5dp"
+            app:titleMarginStart="100dp"
+            android:id="@+id/toolbar"
+            ></androidx.appcompat.widget.Toolbar>
+
+
+                <androidx.constraintlayout.utils.widget.ImageFilterButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginStart="5dp"
+
+                    android:src="@drawable/tablelogo"></androidx.constraintlayout.utils.widget.ImageFilterButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="fantasy"
+                    android:text="RICH TABLE"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="cursive"
+                    android:text="Happy Meal"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    >
+
+                </TextView>
+
+        </RelativeLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

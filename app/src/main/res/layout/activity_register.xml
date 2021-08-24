@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+    <TextView
+
+        android:id="@+id/register_Yourself"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_span="3"
+        android:text="Register Yourself!"
+        android:textColor="@color/black"
+
+
+        android:textSize="15sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TableLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+
+        android:layout_marginTop="40dp"
+        android:background="#8f1f43"
+
+        android:layout_gravity="center"
+
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="30dp">
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="First Name:"
+            android:textColor="@color/white"
+            android:textSize="20sp">
+
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/first"
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:hint="Enter First Name"
+
+            android:textColorHint="#b5aaab">
+
+        </EditText>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/reqFirst"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:gravity="center"
+            android:text="Required!"
+            android:textColor="#86d9d3"
+            android:visibility="invisible"
+            android:textSize="15sp"
+            tools:ignore="DuplicateIds">
+
+        </TextView>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Email:"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/ln"
+            android:layout_width="match_parent"
+            android:textColorHint="#b5aaab"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Enter email">
+
+        </EditText>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/reqLast"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:gravity="center"
+            android:text="Required!"
+
+            android:textColor="#86d9d3"
+            android:visibility="invisible"
+            android:textSize="15sp">
+
+        </TextView>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="password:"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:textColorHint="#b5aaab"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Enter password">
+
+        </EditText>
+
+    </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/idc"
+                android:layout_width="match_parent"
+
+                android:textColorHint="#b5aaab"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="username ">
+
+            </EditText>
+
+
+        </TableRow>
+        <TableRow>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="345dp"
+                android:layout_marginTop="10dp"
+                android:layout_span="3"
+                android:backgroundTint="#4f2835"
+                android:paddingEnd="60dp"
+                android:text="Submit">
+
+
+            </Button>
+
+        </TableRow>
+    </TableLayout>
+</FrameLayout>
